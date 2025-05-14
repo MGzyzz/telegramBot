@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="text-center text-light py-5 rounded">
+        <h1 class="display-4">Добро пожаловать в Telegram Bot</h1>
+        <h5>Ваш ID телеграмм чата: {{ user.chat_id }}</h5>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <div class="card bg-secondary text-light rounded">
+                <div class="card-body">
+                    <h4 class="card-title">Информация о пользователе</h4>
+                    <p>Имя: {{ user.first_name }} {{ user.last_name }}</p>
+                    <p>Username: {{ user.username }}</p>
+                    <p>Дата регистрации: {{ user.date|date:"d M Y, H:i" }}</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card bg-secondary text-light rounded">
+                <div class="card-body">
+                    <h4 class="card-title">Категории и Элементы</h4>
+                    {% if category %}
+                        <ul class="list-group">
+                            {% for cat in category %}
+                                <li class="list-group-item bg-dark text-light">
+                                    <strong>{{ cat.name }}</strong>
+                                    <ul class="mt-2">
+                                        {% for item in categoryItem %}
+                                            {% if item.category_id == cat.id %}
+                                                <li>{{ item.name }}</li>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </ul>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% else %}
+                        <p>Категории отсутствуют.</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
