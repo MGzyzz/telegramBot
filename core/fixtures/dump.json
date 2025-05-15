@@ -1,0 +1,71 @@
+[
+{
+    "model": "telegramBot.category",
+    "pk": 1,
+    "fields": {
+        "name": "Фрукты"
+    }
+},
+{
+    "model": "telegramBot.category",
+    "pk": 2,
+    "fields": {
+        "name": "Овощи"
+    }
+},
+{
+    "model": "telegramBot.category",
+    "pk": 3,
+    "fields": {
+        "name": "Орехи"
+    }
+},
+{
+    "model": "telegramBot.categoryitem",
+    "pk": 1,
+    "fields": {
+        "category": 1,
+        "name": "Яблоко"
+    }
+},
+{
+    "model": "telegramBot.categoryitem",
+    "pk": 7,
+    "fields": {
+        "category": 1,
+        "name": "Груша"
+    }
+},
+{
+    "model": "telegramBot.categoryitem",
+    "pk": 8,
+    "fields": {
+        "category": 2,
+        "name": "Помидор"
+    }
+},
+{
+    "model": "telegramBot.categoryitem",
+    "pk": 9,
+    "fields": {
+        "category": 2,
+        "name": "Огурец"
+    }
+},
+{
+    "model": "telegramBot.categoryitem",
+    "pk": 10,
+    "fields": {
+        "category": 3,
+        "name": "Грецкий орех"
+    }
+},
+{
+    "model": "telegramBot.categoryitem",
+    "pk": 11,
+    "fields": {
+        "category": 3,
+        "name": "Миндаль"
+    }
+}
+]

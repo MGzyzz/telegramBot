@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-%2@6i+r)j)a%ur6nol5!=aninmv3qo(i6qf#7q0o2nm_)_76c5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-URL_NGROK = 'da82-2a03-32c0-2a-b6b1-f8ae-8390-f13a-8356.ngrok-free.app'
+# NGROK URL
+URL_NGROK = 'YOUR_NGROK_URL'
 
 ALLOWED_HOSTS = [
     URL_NGROK,
@@ -129,7 +130,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Telegram Bot token
 
-BOT_TOKEN = '7774191317:AAGA1B2ondZQ12hjC7qrCBwkCfcSpWRNIUc'
+BOT_TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN'
 
 # Telegram bot api 
 # для обязательной работы с ботом подключите токен BOT_TOKEN!
